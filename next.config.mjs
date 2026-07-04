@@ -4,6 +4,13 @@ const nextConfig = {
   images: {
     formats: ['image/webp'],
   },
+  transpilePackages: ['three'],
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
 };
 
 export default nextConfig;

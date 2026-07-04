@@ -20,12 +20,22 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Build
+## Deploy on Vercel
+
+This project is configured for zero-config Vercel deployment.
+
+1. Import the repository in [Vercel](https://vercel.com/new)
+2. Framework preset: **Next.js** (auto-detected)
+3. No environment variables required for the marketing site
+4. Node.js 20.x is used (see `.nvmrc`)
+
+Vercel runs `npm ci` then `npm run build`. The build has been verified clean with `npm ci && npm run build`.
 
 ```bash
-npm run build
-npm start
+# Optional: local production preview
+npm run build && npm start
 ```
+
 
 ## Project Structure
 
